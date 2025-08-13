@@ -1,88 +1,71 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 0;
+    margin: 0;
+    background: #111;
+    color: white;
 }
 
 header {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #ff0044, #ff6600);
+    text-align: center;
+    padding: 20px;
+    background: #000;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+header h1 {
+    margin: 0;
+    font-size: 28px;
 }
 
-h2 {
-    font-size: 2em;
-    margin-top: 40px;
+header p {
+    font-size: 16px;
+    color: #ccc;
 }
 
-p {
-    font-size: 1.2em;
-    margin: 10px 20px;
+nav {
+    margin-top: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-ul li {
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-main {
-    margin-top: 50px;
+nav a:hover, nav a.ativo {
+    color: yellow;
 }
 
 .botao {
     display: inline-block;
-    padding: 20px 40px;
-    font-size: 1.5em;
-    background-color: #ff0044;
+    background: red;
     color: white;
+    padding: 15px 25px;
     text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 .botao:hover {
-    background-color: #ff6600;
-    transform: scale(1.05);
+    background: darkred;
 }
 
-#conteudo {
-    margin: 40px 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.previas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.previa img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 footer {
-    margin-top: 60px;
-    padding: 20px;
-    background-color: #000;
-    font-size: 0.9em;
-}
-
-/* Responsividade para mobiles */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2em;
-    }
-    .botao {
-        padding: 15px 30px;
-        font-size: 1.2em;
-        display: block;
-        margin: 20px auto;
-    }
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    font-size: 14px;
+    color: #aaa;
 }
