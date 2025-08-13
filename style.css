@@ -5,6 +5,7 @@ body {
     color: white;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 20px;
@@ -36,25 +37,62 @@ nav a:hover, nav a.ativo {
     color: yellow;
 }
 
+/* Seção principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.chamada h2 {
+    color: #ff6600;
+}
+
+.chamada p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* Botões de vendas */
+.botoes-vendas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 .botao {
     display: inline-block;
-    background: red;
-    color: white;
-    padding: 15px 25px;
     text-decoration: none;
-    font-size: 18px;
+    color: white;
+    padding: 12px 25px;
     border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-.botao:hover {
-    background: darkred;
+.telegram {
+    background: #0088cc;
 }
 
+.telegram:hover {
+    background: #0077b5;
+}
+
+.discord {
+    background: #5865F2;
+}
+
+.discord:hover {
+    background: #4752c4;
+}
+
+/* Prévias */
 .previas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .previa img {
@@ -62,6 +100,7 @@ nav a:hover, nav a.ativo {
     border-radius: 10px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 15px;
