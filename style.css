@@ -108,3 +108,19 @@ footer {
     font-size: 14px;
     color: #aaa;
 }
+/* Responsividade */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .botoes-vendas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .previas-grid {
+        grid-template-columns: 1fr;
+    }
+}
